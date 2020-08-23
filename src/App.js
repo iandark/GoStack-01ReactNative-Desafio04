@@ -22,14 +22,18 @@ export default function App() {
     }, []);
 
     async function handleLikeRepository(id) {
-        const response = api.put(`repositories/${id}/like`).then((response) => {
-            console.log(response.data);
+        const response = api
+            .post(`repositories/${id}/like`)
+            .then((response) => {
+                console.log(response.data);
 
-            setRepositories([
-                ...repositories.filter((repository) => repository.id !== id),
-                response.data,
-            ]);
-        });
+                setRepositories([
+                    ...repositories.filter(
+                        (repository) => repository.id !== id
+                    ),
+                    response.data,
+                ]);
+            });
     }
 
     return (
@@ -62,7 +66,9 @@ export default function App() {
                                     style={styles.likeText}
                                     testID={`repository-likes-${item.id}`}
                                 >
-                                    {item.likes} curtidas
+                                    {item.likes === 1 &&
+                                        `${item.likes} curtida`}
+                                    {item.likes > 1 && `${item.likes} curtidas`}
                                 </Text>
                             </View>
 
