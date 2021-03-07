@@ -8,7 +8,7 @@ Link para o desafio original: [https://github.com/rocketseat-education/bootcamp-
 
 <br>
 
-## Scripts disponíves
+## Scripts disponíveis
 
 Neste projeto você pode executar:
 
