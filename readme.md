@@ -5,6 +5,7 @@ Aplicação em ReactNative que permite conectar com aplicação backend para lis
 Link para o desafio original: [https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-conceitos-react-native](https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-conceitos-react-native)
 
 **Para esta aplicação é necessário que o projeto [GoStack-01NodeJS-Desafio02](https://github.com/iandark/GoStack-01NodeJS-Desafio02) esteja em execução.**
+
 <br>
 
 ## Scripts disponíves
